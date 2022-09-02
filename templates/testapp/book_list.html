@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+  <div class="container" >
+
+    <h1>Books Information</h1>
+
+    {% for book in book_list %}
+
+    <h2> <a href="{%  url 'detail' book.id %}">{{book.title}}</a> </h2>
+
+    {% endfor %}
+
+  </div>
+
+</div>
+
+
+{% endblock %}

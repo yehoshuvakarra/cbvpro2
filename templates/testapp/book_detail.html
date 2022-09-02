@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+  <div class="container" >
+
+    <h1>{{book.title}}Book Information</h1>
+
+    a<h2>Book Title : {{book.title}}</h2>
+    <h2>Book Author : {{book.author}}</h2>
+    <h2>Number Of Pages : {{book.pages}}</h2>
+    <h2>Book Price : {{book.price}}</h2>
+
+  </div>
+
+</div>
+
+{% endblock %}

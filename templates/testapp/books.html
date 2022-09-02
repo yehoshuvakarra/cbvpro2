@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+  <div class="container" >
+
+    <h1>Books Information with customized html</h1>
+
+    {% for book in list_of_books %}
+
+    <ul>
+      <li>Book Title : {{book.title}}</li>
+      <li>Book Author : {{book.author}}</li>
+      <li>Number Of Pages : {{book.pages}}</li>
+      <li>Book Price : {{book.price}}</li>
+    </ul>
+
+    {% endfor %}
+
+  </div>
+
+</div>
+
+
+{% endblock %}
